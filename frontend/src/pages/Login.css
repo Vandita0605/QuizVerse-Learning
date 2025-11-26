@@ -1,0 +1,77 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #fad0c4 100%);
+  font-family: 'Poppins', sans-serif;
+}
+/* src/pages/Login.css */
+.login-page {
+    /* --- FIX: Perfect Centering --- */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    min-height: 100vh; /* Ensures it covers the entire viewport height */
+    
+    /* Current background styles */
+    background: linear-gradient(135deg, #e0f2fe 0%, #d1e5f8 100%); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+/* src/pages/Login.css (Adjusting .login-box) */
+
+.login-box {
+    /* Use white background if you want the outer gradient to show, 
+       OR use the pink color from your image if you want the card colored: */
+    background: #fecaca; /* Example soft pink background from your image */
+    padding: 40px;
+    border-radius: 16px; 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); 
+    width: 100%;
+    max-width: 400px; /* Controls how wide the box can get */
+    text-align: center;
+    animation: fadeIn 0.8s ease-out; 
+}
+/* ... rest of your CSS ... */
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff3e8e;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.login-btn {
+  width: 100%;
+  background: #ff3e8e;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #ff1f76;
+}
+
+.signup-link {
+  margin-top: 12px;
+  display: block;
+  color: #ff3e8e;
+  font-weight: 600;
+  cursor: pointer;
+}

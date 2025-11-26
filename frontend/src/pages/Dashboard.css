@@ -1,0 +1,129 @@
+/* src/pages/Dashboard.css */
+
+.dashboard-container {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #8EC5FC 0%, #E0C3FC 100%);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* --- Welcome Title --- */
+.welcome-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #4b2ddb;
+}
+
+/* --- Stats Container (Level, Score, Streak) --- */
+.stats-container {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.stat-box {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    flex: 1; /* Equal width for all stat boxes */
+    text-align: center;
+    border-left: 5px solid #4f46e5; /* Visual accent color */
+}
+
+.stat-box h3 {
+    font-size: 1rem;
+    color: #64748b; /* Subdued color for titles */
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.stat-box p {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a202c;
+    line-height: 1;
+}
+
+/* --- Modules Section --- */
+.modules-title {
+    font-size: 2rem;
+    color: #334155;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.module-card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.module-card:hover {
+  transform: translateY(-5px);
+}
+
+.module-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #4338ca; /* pretty purple */
+  margin-bottom: 12px;
+}
+
+.module-difficulty {
+  font-weight: 600;
+  color: #10b981; /* green */
+  margin-bottom: 16px;
+}
+
+.start-btn {
+  margin-top: 15px;
+  background: #6c47ff;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.start-btn:hover {
+  background: #5a38d6;
+}
+
+.module-card h3 {
+    font-size: 1.5rem;
+    color: #4f46e5; /* Indigo color for module titles */
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+/* --- Responsive Adjustments (for smaller screens) --- */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 20px;
+    }
+
+    .stats-container {
+        flex-direction: column; /* Stack stats vertically on mobile */
+    }
+
+    .stat-box {
+        margin-bottom: 10px;
+    }
+    
+    .module-card {
+        min-height: 120px;
+    }
+}

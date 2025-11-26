@@ -1,0 +1,71 @@
+/* src/pages/ModuleContent.css */
+
+/* 1. Page Container and Light Blue Background */
+.module-content-container {
+    /* Set the requested background color */
+    background-color: #c9d7fa; /* Very light blue/off-white for a clean look */
+    padding: 40px;
+    line-height: 1.7;
+    min-height: 100vh; /* Ensures background covers entire viewport */
+    color: #334155; /* Dark text for readability */
+}
+
+/* 2. Headings and Structure */
+.module-content-container h1 {
+    font-size: 2.5rem;
+    color: #4f46e5; /* Primary accent color */
+    margin-bottom: 5px;
+}
+
+.module-content-container h2 {
+    font-size: 1.8rem;
+    color: #1e293b;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #0b50ab;
+}
+
+.module-content-container hr {
+    margin: 25px 0;
+    border-color: #084998;
+}
+
+.module-content-container p {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+/* 3. Code Snippet Styling */
+.code-snippet {
+    background: #1e1e1e; /* VS Code dark theme background */
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    white-space: pre-wrap;
+    overflow-x: auto; /* Handle long code lines */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 4. Quiz Button Styling (Matching your theme) */
+.quiz-button {
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #10b981; /* Teal/Green color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.4);
+}
+
+.quiz-button:hover {
+    background-color: #059669;
+    transform: translateY(-1px);
+}

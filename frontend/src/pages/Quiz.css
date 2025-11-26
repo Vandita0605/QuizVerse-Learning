@@ -1,0 +1,30 @@
+.quiz-container {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.option-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  background: #6a5acd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.option-btn:hover {
+  background: #5848c2;
+}
+
+.progress {
+  margin-top: 15px;
+  font-weight: bold;
+}

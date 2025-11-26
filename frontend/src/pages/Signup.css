@@ -1,0 +1,113 @@
+/* src/pages/Signup.css - Styles matching Login.css */
+
+.signup-container {
+    /* --- Full screen container for Centering --- */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    min-height: 100vh; /* Ensures it covers the entire viewport height */
+    
+    /* Background from Login.css */
+    background: linear-gradient(135deg, #e0f2fe 0%, #d1e5f8 100%); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+/* The main box structure */
+.signup-container form {
+    background: #fecaca;
+    padding: 40px; 
+    border-radius: 16px; 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Deep shadow */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    /* Match Login Animation */
+    animation: fadeIn 0.8s ease-out; 
+}
+
+/* Title Styling */
+.signup-container h2 {
+    color: #e546a8; /* Primary accent color */
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    /* Reset background if we want the title inside the white box */
+    padding: 0;
+    width: auto;
+    max-width: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Input Fields (Consistent with Login) --- */
+.signup-container input {
+    width: 100%;
+    padding: 15px; 
+    margin-bottom: 20px;
+    border: 1px solid #ffa8e3;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.signup-container input:focus {
+    /* Focus glow effect */
+    border-color: #e546a8;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(224, 68, 169, 0.3);
+}
+
+/* --- Signup Button --- */
+.signup-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #dc1582; /* Secondary action color (Green/Teal) */
+    color: rgb(255, 173, 222);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(185, 16, 123, 0.4);
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 10px;
+}
+
+.signup-container button:hover {
+    background-color: #960561;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(185, 16, 148, 0.5);
+}
+
+.signup-container button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 5px rgba(185, 16, 126, 0.4);
+}
+
+/* --- Message (Success/Error) --- */
+/* .signup-container .message {
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: #000000; 
+    background-color: #000000;
+    border: 1px solid #e76ec3;
+} */
+
+/* --- Keyframe Animation for Form Fade-in --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
